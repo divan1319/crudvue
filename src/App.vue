@@ -1,30 +1,39 @@
 <template>
-  <nav id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <nav class="uk-navbar uk-navbar-container uk-margin">
+    <div class="uk-navbar-left">
+
+      <ul class="uk-navbar-nav">
+        <li>
+          <router-link to="/">Inicio</router-link>
+        </li>
+        <li>
+          <router-link to="/listar">Ruta de Buses</router-link>
+        </li>
+        <li><a href="#">Item</a></li>
+      </ul>
+
+    </div>
+    <div class="uk-navbar-right">
+      <a class="uk-navbar-toggle" href="#modal-full" uk-search-icon uk-toggle></a>
+    </div>
   </nav>
-  <router-view/>
+  <div id="modal-full" class="uk-modal-full uk-modal" uk-modal>
+    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+      <button class="uk-modal-close-full" type="button" uk-close></button>
+      <form class="uk-search uk-search-large ">
+
+        <input class="uk-search-input uk-text-center" type="search" placeholder="Buscar Ruta ..." autofocus>
+
+        <button class="uk-button uk-button-secondary uk-width-3-4 uk-align-center">Buscar</button>
+
+      </form>
+    </div>
+  </div>
+  <router-view></router-view>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #000000;
 }
 </style>
