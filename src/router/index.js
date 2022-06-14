@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import CrearItem from '../components/Crear.vue'
-import ListarItem from '@/components/Listar'
+import ListaBuses from '@/views/BusesView'
 
 const routes = [
   {
@@ -15,12 +15,12 @@ const routes = [
     component: CrearItem
   },
   {
-    path: '/listar',
+    path: '/buses',
     name:'Mostrar',
-    component: ListarItem
+    component: ListaBuses
   },
   {
-    path: '/about',
+    path: '/nosotros',
     name: 'about',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

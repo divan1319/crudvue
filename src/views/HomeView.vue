@@ -17,13 +17,5 @@ export default {
 }
 </script>
 <style>
-  .img-back{
-    width: 100%;
-  }
 
-  .img-back img{
-    width: 100%;
-    height: 87.7vh;
-    margin-top: -19.6px;
-  }
 </style>
