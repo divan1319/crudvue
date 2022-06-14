@@ -1,12 +1,13 @@
 <template>
-    <div>
-        <h2>Mostrando Elementos</h2>
-        <div v-for="bus in buses" :key="bus.id_bus">
-        <div>{{ bus.id_bus}} </div>
-        <div> {{ bus.ruta_bus }} </div>
-
+    <div class="uk-grid-small" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true"
+     v-for="bus in buses" :key="bus.id_bus">
+    <div class="uk-width-1-4@s">
+        <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title"><div>{{ bus.id_bus}} </div></h3>
+            <p>{{ bus.ruta_bus }}</p>
         </div>
     </div>
+</div>
 </template>
 
 <script>
