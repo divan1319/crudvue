@@ -1,26 +1,27 @@
-nav a{
+nav a {
     color: rgb(94, 85, 85);
-  }
-  nav a.router-link-exact-active {
-    color: #ffffff;
-  }
-  
-  .stickyUI .uk-navbar-container{
-    background-color:#222222 ;
-  }
-  .img-back{
-    width: 100%;
-  }
+}
 
-  .img-back img{
+nav a.router-link-exact-active {
+    color: #ffffff;
+}
+
+.stickyUI .uk-navbar-container {
+    background-color: #222222;
+}
+
+.img-back {
+    width: 100%;
+}
+
+.img-back img {
     width: 100%;
     height: 87.7vh;
-    
     margin-top: -19.6px;
-  }
+}
 
-  @media screen and (max-width: 415px){
-    .img-back img{
-      height: 25vh;
+@media screen and (max-width: 415px) {
+    .img-back img {
+        height: 30vh;
     }
-  }
+}
