@@ -1,62 +1,61 @@
 <template>
-<div class="uk-container uk-padding">
-<div uk-filter="target: .js-filter">
-    <div class="uk-inline">
-    <button class="uk-button uk-button-default" type="button">Filtrar Resultados</button>
-    <div uk-dropdown="pos: bottom-left">
-        <ul class="uk-nav uk-dropdown-nav">
-        <li class="uk-active" uk-filter-control><a href="#">Todas las rutas</a></li>
-        <li class="uk-nav-divider"></li>
-            <li class="uk-nav-header">Por Municipios</li>
-            <li uk-filter-control="[data-color='white']"><a href="#">Blancos</a></li>
-            <li class="uk-nav-divider"></li>
-            <li class="uk-nav-header">Por Departamentos</li>
-            <li uk-filter-control="[data-color='black']"><a href="#">Negro</a></li>
-        </ul>
+
+<div class="uk-section uk-section-secondary uk-light">
+    <div class="uk-container uk-margin">
+        <h3>Bustop</h3>
+        <p class="uk-text-justify">Cansado siempre de preguntar: ¿Dónde pasa esta ruta? ¿Esta pasa por el centro? ¿Va directo?
+        No te preocupes, aquí podrás encontrar la ruta que necesitas. Bustop ha recolectado la información
+        de todas las rutas y sus recorridos a tu disposición.</p>
+        <p></p><br>
+    </div>
+    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s" uk-grid>
+    <div class="uk-card-media-center uk-cover-container">
+        <img src="../assets/images/b2.jpg" alt="" uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body uk-margin-remove">
+        
+            <h3 class="uk-card-title" id="title-section-1">Porque viajar en transporte publico ahora es más fácil</h3>
+            <p>Bustop te ayuda a que encuentres tu ruta de transporte de una manera más fácil sin tanta vuelta.</p>
+        </div>
     </div>
 </div>
 
-    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
-        <li data-color="white">
-            <div class="uk-card uk-card-default uk-card-body">Item</div>
+<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s" uk-grid>
+    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 6000" uk-cover>
+
+    <ul class="uk-slideshow-items">
+            <li>
+            <img src="../assets/images/place1.jpg" alt="" >
         </li>
-        <li data-color="blue">
-            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+<li>
+            <img src="../assets/images/place2.jpg" alt="" >
         </li>
-        <li data-color="white">
-            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        <li>
+            <img src="../assets/images/place5.jpg" alt="" >
         </li>
-        <li data-color="white">
-            <div class="uk-card uk-card-default uk-card-body">Item</div>
-        </li>
-        <li data-color="black">
-            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
-        </li>
-        <li data-color="black">
-            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
-        </li>
-        <li data-color="blue">
-            <div class="uk-card uk-card-primary uk-card-body">Item</div>
-        </li>
-        <li data-color="black">
-            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
-        </li>
-        <li data-color="blue">
-            <div class="uk-card uk-card-primary uk-card-body">Item</div>
-        </li>
-        <li data-color="white">
-            <div class="uk-card uk-card-default uk-card-body">Item</div>
-        </li>
-        <li data-color="blue">
-            <div class="uk-card uk-card-primary uk-card-body">Item</div>
-        </li>
-        <li data-color="black">
-            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        <li>
+            <img src="../assets/images/place3.jpg" alt="" >
         </li>
     </ul>
 
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+<canvas width="600" height="390"></canvas>
+</div>
+        
+    </div>
+    <div>
+        <div class="uk-card-body">
+            <h3 class="uk-card-title" id="title-section-1">Viaja por todo El Salvador</h3>
+            <p>Puedes viajar a los lugares más emblematicos de El Salvador usando transporte público, con la ayuda de Bustop lo lograrás.</p>
+        </div>
+    </div>
 </div>
 </div>
+
 </template>
 
 <script>

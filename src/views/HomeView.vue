@@ -1,6 +1,6 @@
 <template>
 <div class="img-back">
-<img src="../assets/images/t2.jpg" alt="">
+<img src="../assets/images/bgsv.jpg" alt="">
 </div>
   <main-content></main-content>
 </template>
