@@ -16,6 +16,12 @@
     #title-section-1 {
         margin: 90px 0px 0px 0px;
     }
+    #icons-section {
+        margin: 10% 0px 0px 40%;
+    }
+    #section-card {
+        border-radius: 20px;
+    }
 }
 
 @media screen and (max-width: 415px) {
@@ -24,5 +30,11 @@
     }
     #title-section-1 {
         color: black;
+    }
+    #icons-section {
+        margin: 10% 0px 0px 30%;
+    }
+    #section-card {
+        border-radius: 20px;
     }
 }
