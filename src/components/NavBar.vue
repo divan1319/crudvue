@@ -10,7 +10,7 @@
           <li>
             <router-link to="/buses">Ruta de Buses</router-link>
           </li>
-          <li><a href="#">Iniciar Sesión</a></li>
+          <li><a href="#formulario_login" uk-toggle>Iniciar Sesión</a></li>
         </ul>
       </div>
       <div class="nav-overlay uk-navbar-right">

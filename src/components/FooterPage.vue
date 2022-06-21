@@ -24,6 +24,7 @@
                 <li class="uk-link-reset">¿Cómo buscar una ruta?</li>
                 <li class="uk-link-reset">¿Cómo funciona?</li>
                 <li class="uk-link-reset">Más FAQ's <strong>aquí</strong></li>
+                
                 </ul>
                 </div>
             </div>
