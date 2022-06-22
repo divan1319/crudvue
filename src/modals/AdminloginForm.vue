@@ -28,13 +28,16 @@
                 nickname: this.nickname,
                 password:this.password
                 };
+
                 fetch('http://localhost/API/maps/c_login.php',{
                     method:'POST',
                     headers:{'Content-Type':'application/json'},
                     body:JSON.stringify(datos)
                 }).then( res =>{
                     console.log(res)
+                    
                 }).catch(error => {
+                    
                     console.log(error)
                 });
                 

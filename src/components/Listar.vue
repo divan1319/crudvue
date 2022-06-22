@@ -34,7 +34,7 @@ export default {
             fetch('http://localhost/API/maps/c_bus.php')
                 .then(respuesta => respuesta.json())
                 .then((dataResponse) => {
-
+                    console.log(dataResponse)
                     this.buses = []
                     if (typeof dataResponse[0].success === 'undefined') {
                         this.buses = dataResponse;
