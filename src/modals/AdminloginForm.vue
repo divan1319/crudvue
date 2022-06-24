@@ -57,7 +57,7 @@ import axios from 'axios'
                         this.logDetail = {nickname:"",password:""}
 
                         let data =[{tokenid:response.data.token, id: response.data.id, name: response.data.username }]
-                        localStorage.setItem('user', JSON.stringify(data))
+                        sessionStorage.setItem('user', JSON.stringify(data))
                         
                         
                         console.log(response)

@@ -49,7 +49,7 @@ export default {
   },
   methods: {
     logincheck() {
-      const check = localStorage.getItem('user')
+      const check = sessionStorage.getItem('user')
       if (check !== null && check !== '') {
         this.userAuth = true
       } else {
