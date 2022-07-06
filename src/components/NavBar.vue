@@ -3,7 +3,7 @@
     <nav class="uk-navbar uk-navbar-container uk-margin">
       <div class="nav-overlay uk-navbar-left">
         <ul class="uk-navbar-nav">
-          <li v-if="userAuth">
+          <li v-if="isAuth">
             <a href="">logeado</a>
           </li>
           <li>
@@ -12,7 +12,7 @@
           <li>
             <router-link to="/buses">Ruta de Buses</router-link>
           </li>
-          <li v-if="!userAuth"><a href="#formulario_login" uk-toggle>Iniciar Sesión</a></li>
+          <li v-if="!isAuth"><a href="#formulario_login" uk-toggle>Iniciar Sesión</a></li>
         </ul>
       </div>
       <div class="nav-overlay uk-navbar-right">
@@ -42,25 +42,12 @@
 
 export default {
 
-  data() {
-    return {
-      userAuth: false
+  props:{
+    isAuth:{
+      type:Boolean,
+      required: true
     }
-  },
-  methods: {
-    logincheck() {
-      const check = sessionStorage.getItem('user')
-      if (check !== null && check !== '') {
-        this.userAuth = true
-      } else {
-        this.userAuth = false
-      }
-      return this.userAuth
-    }
-  },
-   created:function(){
-      this.logincheck();
-    }
+  }
 
 }
 </script>

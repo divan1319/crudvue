@@ -20,9 +20,7 @@
     <a class="uk-alert-close" uk-close></a>
     <p> {{  errorMessage }} </p>
 </div>
-<div v-if="userAuth">
-hola logueado
-</div>
+
 </template>
 <script>
 import axios from 'axios'
@@ -34,7 +32,7 @@ import axios from 'axios'
                 logDetail:{nickname: "", password:""},
                 errorMessage:"",
                 successMessage:"",
-                userAuth: false
+                
             }
         },
         methods:{
@@ -49,7 +47,7 @@ import axios from 'axios'
 
             getDataLogin(){
                 var logForm = this.toFormData(this.logDetail)
-                axios.post('http://localhost/API/maps/c_login.php', logForm).then(response => {
+                axios.post('http://localhost/API/maps/controllers/c_login.php', logForm).then(response => {
                     if(response.data.error){
                         this.errorMessage = response.data.message
                     }else{

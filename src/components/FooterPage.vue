@@ -1,5 +1,5 @@
 <template>
-    <footer class="uk-background-muted">
+    <footer class="uk-background-muted" v-if="!isAuth">
         <div class="uk-container uk-padding">
             <div class="uk-child-width-1-3@m uk-child-width-1-1@s" uk-grid>
                 <div>
@@ -37,3 +37,16 @@
     </footer>
     
 </template>
+<script>
+
+    export default{
+         props:{
+            isAuth:{
+             type:Boolean,
+            required: true
+            }
+         }
+
+    }
+
+</script>
